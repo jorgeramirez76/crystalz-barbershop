@@ -19,8 +19,13 @@
   // ────────────── SCROLL REVEALS ──────────────
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12, rootMargin: '0px 0px -80px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  // Force-reveal fallback: any element that's never been triggered after 4s reveals anyway.
+  // Protects against unreachable elements (long pages, headless screenshots, JS errors).
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
+  }, 4000);
 
   // ────────────── RENDER BARBERS ──────────────
   const barbersGrid = document.getElementById('barbersGrid');
