@@ -549,10 +549,12 @@ section { padding: 100px 0; position: relative; }
 }
 
 /* ===============================
-   Scroll reveal
+   Scroll reveal — default visible (avoids "blank middle" if observer fails / screenshots / no-JS)
+   When JS adds .js-loaded to body, elements that haven't been observed-in yet hide and animate in.
    =============================== */
-.reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1); }
-.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal { opacity: 1; transform: none; transition: opacity .9s cubic-bezier(0.4, 0, 0.2, 1), transform .9s cubic-bezier(0.4, 0, 0.2, 1); }
+body.js-loaded .reveal:not(.in) { opacity: 0; transform: translateY(40px); }
+body.js-loaded .reveal.in { opacity: 1; transform: translateY(0); }
 
 /* ===============================
    Mobile

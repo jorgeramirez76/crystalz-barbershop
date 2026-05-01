@@ -17,15 +17,23 @@
   });
 
   // ────────────── SCROLL REVEALS ──────────────
+  // Pre-mark elements ALREADY in the initial viewport as 'in' before adding js-loaded class —
+  // prevents a flash of hidden content above the fold.
+  const initialIn = (el) => {
+    const r = el.getBoundingClientRect();
+    return r.top < window.innerHeight && r.bottom > 0;
+  };
+  document.querySelectorAll('.reveal').forEach(el => { if (initialIn(el)) el.classList.add('in'); });
+  // Now activate the hide-by-default behavior for un-observed elements
+  document.body.classList.add('js-loaded');
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  // Force-reveal fallback: any element that's never been triggered after 4s reveals anyway.
-  // Protects against unreachable elements (long pages, headless screenshots, JS errors).
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+  // Hard fallback after 1.5s — anything still not 'in' just reveals
   setTimeout(() => {
     document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
-  }, 4000);
+  }, 1500);
 
   // ────────────── RENDER BARBERS ──────────────
   const barbersGrid = document.getElementById('barbersGrid');
