@@ -9,11 +9,11 @@
   <!-- Decorative razor lines -->
   <line x1="20" y1="60" x2="60" y2="60" stroke="url(#goldGrad)" stroke-width="1.5"/>
   <line x1="340" y1="60" x2="380" y2="60" stroke="url(#goldGrad)" stroke-width="1.5"/>
-  <!-- Wordmark -->
-  <text x="200" y="68" text-anchor="middle"
-        font-family="'Playfair Display', Georgia, serif"
-        font-size="48" font-weight="900"
-        letter-spacing="6"
+  <!-- Wordmark — Cinzel for classic Roman barbershop feel -->
+  <text x="200" y="64" text-anchor="middle"
+        font-family="'Cinzel', Georgia, serif"
+        font-size="40" font-weight="900"
+        letter-spacing="8"
         fill="url(#goldGrad)">CRYSTALZ</text>
   <!-- Tagline -->
   <text x="200" y="92" text-anchor="middle"
