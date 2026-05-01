@@ -100,6 +100,20 @@ window.CRYSTALZ_DATA = {
       priceCutBeard: 50
     },
     {
+      id: "anibal",
+      name: "Anibal Barbero",
+      nick: "Anibal",
+      photo: "images/barbers/anibal.jpeg",
+      handle: null,
+      handleUrl: null,
+      bio: "Almost 10 years behind the chair. Perfect 5.0 rating across 45+ Booksy reviews — \"my go-to guy\" is what regulars say. Punctual and consistent.",
+      locations: ["roselle-park"],
+      booksyUrl: "https://booksy.com/en-us/854665_anibal-barbero_barber-shop_28871_roselle-park",
+      badge: "5.0 ★ · 45+ Reviews",
+      priceCut: 35,
+      priceCutBeard: 45
+    },
+    {
       id: "miguel-po",
       name: "Miguel Po",
       nick: "Miguel · Elizabeth",
