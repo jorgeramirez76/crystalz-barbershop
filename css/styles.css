@@ -549,12 +549,11 @@ section { padding: 100px 0; position: relative; }
 }
 
 /* ===============================
-   Scroll reveal — default visible (avoids "blank middle" if observer fails / screenshots / no-JS)
-   When JS adds .js-loaded to body, elements that haven't been observed-in yet hide and animate in.
+   Scroll reveal — DISABLED (kept class hooks for future re-enable, but everything visible by default)
+   The site has plenty of motion (hero word-reveal, marquee, magnetic CTAs, image zooms);
+   scroll-reveal-on-IntersectionObserver added complexity without enough payoff and broke screenshots.
    =============================== */
-.reveal { opacity: 1; transform: none; transition: opacity .9s cubic-bezier(0.4, 0, 0.2, 1), transform .9s cubic-bezier(0.4, 0, 0.2, 1); }
-body.js-loaded .reveal:not(.in) { opacity: 0; transform: translateY(40px); }
-body.js-loaded .reveal.in { opacity: 1; transform: translateY(0); }
+.reveal { opacity: 1; transform: none; }
 
 /* ===============================
    Mobile
