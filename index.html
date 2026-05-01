@@ -3,424 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crystalz Barbershop — Roselle Park & Elizabeth NJ | Family-Owned Since 2010</title>
-  <meta name="description" content="Premium men's haircuts, fades, beard work and lineups at Crystalz Barbershop. Two NJ locations: Roselle Park and Elizabeth. Book online with Joel, Mauricio, Chino91, Miguel and the team.">
-
-  <!-- Open Graph -->
+  <title>Crystalz Barbershop | Roselle Park & Elizabeth NJ Fades, Beards & Lineups</title>
+  <meta name="description" content="Crystalz Barbershop is a family-owned Union County NJ barbershop with locations in Roselle Park and Elizabeth. Book skin fades, beard work, kids cuts, lineups and custom designs online.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Crystalz Barbershop — Roselle Park & Elizabeth NJ">
-  <meta property="og:description" content="Family-owned NJ barbershop. Skin fades, beard work, lineups. Book online with the Crystalz team.">
-  <meta property="og:image" content="/images/og-cover.jpg">
-
-  <!-- JSON-LD -->
+  <meta property="og:title" content="Crystalz Barbershop — Union County NJ Cuts Since 2010">
+  <meta property="og:description" content="Roselle Park roots. Elizabeth energy. Book Crystalz barbers online for fades, beards, lineups and kids cuts.">
+  <meta property="og:image" content="images/gallery/03-shop-interior.jpeg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HairSalon",
     "name": "Crystalz Barbershop",
-    "image": "/assets/logo.svg",
-    "description": "Family-owned NJ barbershop offering haircuts, beard work, skin fades, lineups, and kids' cuts.",
+    "image": "images/gallery/03-shop-interior.jpeg",
+    "description": "Family-owned Union County NJ barbershop offering haircuts, skin fades, beard work, lineups, kids cuts and custom designs.",
     "priceRange": "$25-$55",
     "telephone": "+1-908-259-1151",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "13 W Westfield Ave",
-        "addressLocality": "Roselle Park",
-        "addressRegion": "NJ",
-        "postalCode": "07204",
-        "addressCountry": "US"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "910 Elizabeth Ave",
-        "addressLocality": "Elizabeth",
-        "addressRegion": "NJ",
-        "postalCode": "07201",
-        "addressCountry": "US"
-      }
-    ],
+    "address": [{"@type":"PostalAddress","streetAddress":"13 W Westfield Ave","addressLocality":"Roselle Park","addressRegion":"NJ","postalCode":"07204","addressCountry":"US"},{"@type":"PostalAddress","streetAddress":"910 Elizabeth Ave","addressLocality":"Elizabeth","addressRegion":"NJ","postalCode":"07201","addressCountry":"US"}],
     "openingHours": "Mo-Sa 10:00-20:00",
-    "sameAs": [
-      "https://www.instagram.com/crystalzusa/",
-      "https://booksy.com/en-us/1097676_crystalz-barbershop_barber-shop_28871_roselle-park"
-    ]
+    "sameAs": ["https://www.instagram.com/crystalzusa/","https://booksy.com/en-us/1097676_crystalz-barbershop_barber-shop_28871_roselle-park"]
   }
   </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,300..900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo" aria-label="Crystalz Barbershop home"><img src="assets/logo.svg" alt="Crystalz Barbershop"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#proof">Proof</a></li>
+      <li><a href="#barbers">Barbers</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#locations">Locations</a></li>
+    </ul>
+    <a href="#" class="btn nav-book book-trigger">Book Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="navLinks">☰</button>
+  </nav>
 
-<!-- ============== NAV ============== -->
-<nav class="nav" id="nav">
-  <a href="#top" class="nav-logo"><img src="assets/logo.svg" alt="Crystalz Barbershop"></a>
-  <ul class="nav-links">
-    <li><a href="#about">Story</a></li>
-    <li><a href="#barbers">Barbers</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#locations">Locations</a></li>
-  </ul>
-  <a href="#" class="btn book-trigger">Book Now</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle nav">☰</button>
-</nav>
+  <header class="hero" id="top">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="kicker">Roselle Park roots · Elizabeth energy · Since 2010</p>
+      <h1>Union County cuts with a chair you can trust.</h1>
+      <p class="hero-sub">Book your barber, know your price, and leave with the fade, beard, lineup or kids cut you came for. Family-run. Appointment-ready. Walk-ins when the chair is open.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn book-trigger">Book an appointment</a>
+        <a href="#barbers" class="btn btn-ghost">Choose your barber</a>
+      </div>
+      <div class="hero-mini-proof" aria-label="Crystalz proof points">
+        <div><strong>4.9★</strong><span>Booksy rating</span></div>
+        <div><strong>269+</strong><span>five-star reviews</span></div>
+        <div><strong>2</strong><span>NJ locations</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-photo primary"><img src="images/gallery/03-shop-interior.jpeg" alt="Crystalz barber working inside the shop"></div>
+      <div class="hero-photo secondary"><img src="images/gallery/02-fade-detail.jpeg" alt="Detailed fade work at Crystalz Barbershop"></div>
+      <div class="stamp" aria-hidden="true">CRYSTALZ<br>EST. 2010<br>NJ</div>
+    </div>
+  </header>
 
-<!-- ============== HERO ============== -->
-<header class="hero" id="top">
-  <div class="hero-bg"></div>
-  <img class="hero-image" src="images/gallery/04-barber-action.jpeg" alt="Crystalz Barbershop" aria-hidden="true">
-  <div class="hero-content">
-    <div class="hero-stars">★ ★ ★ ★ ★</div>
-    <p class="hero-eyebrow">Family-owned · Roselle Park · Elizabeth · NJ</p>
-    <h1 class="hero-title">
-      <span class="word" style="--d:.2s">Where</span>
-      <span class="word" style="--d:.32s">the</span>
-      <span class="word" style="--d:.44s">cut</span>
-      <span class="word italic" style="--d:.62s">tells</span>
-      <span class="word italic" style="--d:.74s">a</span>
-      <span class="word italic" style="--d:.86s">story.</span>
-    </h1>
-    <div class="hero-divider"></div>
-    <p class="hero-sub">Three Santamaria brothers and the rest of the Crystalz family have been delivering precision skin fades, beard work, and signature lineups since 2010. Walk in. Sit down. Leave sharper than you came.</p>
-    <div class="hero-actions">
-      <a href="#" class="btn book-trigger">Book An Appointment</a>
-      <a href="#barbers" class="btn btn-outline">Meet the Team</a>
+  <section class="ticker" aria-label="Popular Crystalz services">
+    <div class="ticker-track">
+      <span>Skin fades</span><b>/</b><span>Beard sculpting</span><b>/</b><span>Kids cuts</span><b>/</b><span>Lineups</span><b>/</b><span>Custom designs</span><b>/</b><span>Hot towel finish</span><b>/</b>
+      <span>Skin fades</span><b>/</b><span>Beard sculpting</span><b>/</b><span>Kids cuts</span><b>/</b><span>Lineups</span><b>/</b><span>Custom designs</span><b>/</b><span>Hot towel finish</span><b>/</b>
+    </div>
+  </section>
+
+  <main>
+    <section class="intro" id="proof">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">Not a chain. Not a template.</p>
+          <h2>Crystalz is built around real barbers, real regulars, and two neighborhood shops.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Crystalz started in Roselle Park and grew into Elizabeth because clients kept coming back — for the cut, the conversation, and the consistency. Leo, the Santamaria brothers, Miguel, Anibal and the team each bring their own style behind the chair.</p>
+          <p>Use this site like the front desk: compare barbers, check typical rates, pick a location, and start the booking in seconds.</p>
+        </div>
+      </div>
+      <div class="container proof-row">
+        <article><span>01</span><strong>Pick by barber</strong><p>Every barber has their own profile, prices, specialties and booking CTA.</p></article>
+        <article><span>02</span><strong>Know the range</strong><p>Most services are clearly listed from basic cuts to full reset appointments.</p></article>
+        <article><span>03</span><strong>Choose location</strong><p>Roselle Park flagship or Elizabeth — directions and phone links are always close.</p></article>
+      </div>
+    </section>
+
+    <section class="barbers" id="barbers">
+      <div class="container section-split">
+        <div>
+          <p class="eyebrow">The chairs</p>
+          <h2>Book the person, not just the shop.</h2>
+        </div>
+        <p>From Joel’s detailed designs to Montana’s skin fades and Miguel’s steady regular cuts, the team is built for different styles, schedules and client preferences.</p>
+      </div>
+      <div class="container barbers-grid" id="barbersGrid"></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container section-split">
+        <div>
+          <p class="eyebrow">Menu</p>
+          <h2>Rates that make it easy to pick the right appointment.</h2>
+        </div>
+        <p>Prices can vary by barber. Use these ranges as the starting point, then confirm with your barber while booking.</p>
+      </div>
+      <div class="container services-grid" id="servicesGrid"></div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container gallery-head">
+        <p class="eyebrow">Recent work</p>
+        <h2>Sharp lines, clean blends, camera-ready finishes.</h2>
+        <a href="https://www.instagram.com/crystalzusa/" target="_blank" rel="noopener" class="text-link">Follow @crystalzusa →</a>
+      </div>
+      <div class="gallery-rack" aria-label="Crystalz haircut gallery">
+        <figure class="wide"><img src="images/gallery/01-joel-inspo.jpeg" alt="Featured Crystalz haircut"><figcaption>Featured cut</figcaption></figure>
+        <figure><img src="images/gallery/06-skin-fade.jpeg" alt="Skin fade detail"><figcaption>Skin fade</figcaption></figure>
+        <figure class="tall"><img src="images/gallery/05-beard-work.jpeg" alt="Beard work detail"><figcaption>Beard work</figcaption></figure>
+        <figure><img src="images/gallery/07-classic-cut.jpeg" alt="Classic cut finish"><figcaption>Classic finish</figcaption></figure>
+        <figure><img src="images/gallery/04-barber-action.jpeg" alt="Barber working with client"><figcaption>Behind the chair</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="locations" id="locations">
+      <div class="container section-split">
+        <div>
+          <p class="eyebrow">Find the chair</p>
+          <h2>Two Union County locations.</h2>
+        </div>
+        <p>Book online when possible. Walk-ins are welcome when a barber has space.</p>
+      </div>
+      <div class="container locations-grid">
+        <article class="location-card">
+          <div class="location-top"><span>Flagship</span><strong>Roselle Park</strong></div>
+          <p><a href="https://maps.google.com/?q=13+W+Westfield+Ave+Roselle+Park+NJ+07204" target="_blank" rel="noopener">13 W Westfield Ave, Roselle Park, NJ 07204</a></p>
+          <p><a href="tel:+19082591151">(908) 259-1151</a></p>
+          <dl><div><dt>Mon–Fri</dt><dd>10am–8pm</dd></div><div><dt>Sat</dt><dd>9am–7pm</dd></div><div><dt>Sun</dt><dd>Closed</dd></div></dl>
+          <div class="location-actions"><a href="#" class="btn book-trigger" data-location="roselle-park">Book Roselle Park</a><a href="https://maps.google.com/?q=13+W+Westfield+Ave+Roselle+Park+NJ" class="btn btn-ghost" target="_blank" rel="noopener">Directions</a></div>
+        </article>
+        <article class="location-card invert">
+          <div class="location-top"><span>Second shop</span><strong>Elizabeth</strong></div>
+          <p><a href="https://maps.google.com/?q=910+Elizabeth+Ave+Elizabeth+NJ+07201" target="_blank" rel="noopener">910 Elizabeth Ave, Elizabeth, NJ 07201</a></p>
+          <p><a href="tel:+19083516040">(908) 351-6040</a></p>
+          <dl><div><dt>Mon–Sat</dt><dd>10am–8pm</dd></div><div><dt>Sun</dt><dd>10am–4pm</dd></div></dl>
+          <div class="location-actions"><a href="#" class="btn book-trigger" data-location="elizabeth">Book Elizabeth</a><a href="https://maps.google.com/?q=910+Elizabeth+Ave+Elizabeth+NJ" class="btn btn-ghost" target="_blank" rel="noopener">Directions</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container reviews-panel">
+        <div>
+          <p class="eyebrow">Social proof</p>
+          <h2>4.9 stars on Booksy, backed by regulars who come back.</h2>
+          <a href="https://booksy.com/en-us/1097676_crystalz-barbershop_barber-shop_28871_roselle-park" target="_blank" rel="noopener" class="btn">See Booksy</a>
+        </div>
+        <div class="reviews-grid">
+          <article><div>★★★★★</div><p>“Precise with fades. The whole shop has that family vibe — kids welcome, regulars treated right.”</p><span>Booksy customer</span></article>
+          <article><div>★★★★★</div><p>“You feel like a regular even on your first visit. Classic, stylish, kids cuts, beard work.”</p><span>Local customer</span></article>
+          <article><div>★★★★★</div><p>“Been coming for four years. Solid barber, polite, great service every single time.”</p><span>Regular client</span></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><img src="assets/logo.svg" alt="Crystalz" class="footer-logo"><p>Family-owned NJ barbershop. Roselle Park roots. Elizabeth energy. Real cuts, no shortcuts.</p><div class="footer-social"><a href="https://www.instagram.com/crystalzusa/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/p/Crystalz-Barbershop-100057115974297/" target="_blank" rel="noopener">Facebook</a><a href="https://booksy.com/en-us/1097676_crystalz-barbershop_barber-shop_28871_roselle-park" target="_blank" rel="noopener">Booksy</a></div></div>
+      <div><h5>Roselle Park</h5><ul><li>13 W Westfield Ave</li><li><a href="tel:+19082591151">(908) 259-1151</a></li><li>Mon–Fri 10–8 · Sat 9–7</li></ul></div>
+      <div><h5>Elizabeth</h5><ul><li>910 Elizabeth Ave</li><li><a href="tel:+19083516040">(908) 351-6040</a></li><li>Mon–Sat 10–8 · Sun 10–4</li></ul></div>
+      <div><h5>Navigate</h5><ul><li><a href="#barbers">Barbers</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Work</a></li><li><a href="#locations">Locations</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Crystalz Barbershop · Roselle Park & Elizabeth, NJ</div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <p class="eyebrow">Book an appointment</p>
+      <h3 id="booking-title">Start with the right chair.</h3>
+      <p class="modal-sub">Pick your barber, service and preferred time. If online confirmation is unavailable, call the selected location directly.</p>
+      <form id="bookingForm">
+        <div class="form-error" id="formError"></div>
+        <div class="form-group"><label for="b-location">Location</label><select id="b-location" name="location" required><option value="">Select a location</option><option value="roselle-park">Roselle Park · 13 W Westfield Ave</option><option value="elizabeth">Elizabeth · 910 Elizabeth Ave</option></select></div>
+        <div class="form-group"><label for="b-barber">Barber</label><select id="b-barber" name="barber" required><option value="">Choose your barber</option></select></div>
+        <div class="form-group"><label for="b-service">Service</label><select id="b-service" name="service" required><option value="">Choose a service</option></select></div>
+        <div class="form-row"><div class="form-group"><label for="b-date">Date</label><input type="date" id="b-date" name="date" required></div><div class="form-group"><label for="b-time">Time</label><select id="b-time" name="time" required><option value="">Time</option></select></div></div>
+        <div class="form-row"><div class="form-group"><label for="b-name">Your name</label><input type="text" id="b-name" name="name" required></div><div class="form-group"><label for="b-phone">Phone</label><input type="tel" id="b-phone" name="phone" placeholder="(908) 555-1234" required></div></div>
+        <div class="form-group"><label for="b-email">Email</label><input type="email" id="b-email" name="email" required></div>
+        <div class="form-group"><label for="b-notes">Notes optional</label><textarea id="b-notes" name="notes" rows="2" placeholder="Any details we should know?"></textarea></div>
+        <button type="submit" class="btn" id="submitBtn">Confirm appointment</button>
+      </form>
+      <div class="form-success" id="formSuccess"><div class="form-success-icon">✓</div><h3>Appointment request sent</h3><p>We’ll confirm by SMS/email. If you do not hear back, call the shop directly.</p><button class="btn btn-ghost" id="successClose">Close</button></div>
     </div>
   </div>
-</header>
 
-<!-- ============== ABOUT / FAMILY ============== -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p class="eyebrow">Our Story</p>
-        <h2>A barbershop run by family. Treats every client like one.</h2>
-        <p>Crystalz Barbershop has been a fixture in Union County for over a decade. What started as one chair in Roselle Park has grown into two thriving locations — Roselle Park and Elizabeth — staffed by some of the most respected barbers in New Jersey.</p>
-        <p>The shop is owned by <strong>Leonardo "Leo" Jaramillo</strong> and powered by the three Santamaria brothers — Joel, Mauricio, and Uriel — alongside Miguel Eliza, Anibal Barbero, and the rest of the team. When you sit in our chair, you're sitting with family.</p>
-        <div class="family-card">
-          <h4>The Crystalz Family</h4>
-          <p class="family-list">
-            <a href="barbers/leo.html"><span>Leonardo</span> Jaramillo · Owner</a><br>
-            <a href="barbers/joel.html"><span>Joel</span> "Joel the Barber" Santamaria</a><br>
-            <a href="barbers/mauricio.html"><span>Mauricio</span> "Montana" Santamaria</a><br>
-            <a href="barbers/chino91.html"><span>Uriel</span> "Chino91" Santamaria</a><br>
-            <a href="barbers/miguel-eliza.html"><span>Miguel</span> Eliza</a><br>
-            <a href="barbers/anibal.html"><span>Anibal</span> Barbero</a><br>
-            <a href="barbers/miguel-po.html"><span>Miguel</span> "Po" — Elizabeth</a>
-          </p>
-          <p style="margin-top:14px; font-size:0.82rem; color:var(--cream-dim);">Click any name for their full bio + booking.</p>
-        </div>
-      </div>
-      <div class="about-visual reveal">
-        <img class="about-visual-image" src="images/gallery/03-shop-interior.jpeg" alt="Crystalz Barbershop interior">
-        <div class="about-visual-text">
-          <div class="stat-number">15+</div>
-          <div class="stat-divider"></div>
-          <div class="stat-label">Years in NJ</div>
-          <div style="margin-top: 32px;">
-            <div class="stat-number" style="font-size: 3.5rem;">269+</div>
-            <div class="stat-divider"></div>
-            <div class="stat-label">5★ Booksy Reviews</div>
-          </div>
-          <div style="margin-top: 32px;">
-            <div class="stat-number" style="font-size: 3.5rem;">2</div>
-            <div class="stat-divider"></div>
-            <div class="stat-label">Union County Locations</div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="mobile-cta-bar" role="navigation" aria-label="Quick actions">
+    <a href="#" class="mcta mcta-primary book-trigger" aria-label="Book an appointment"><span>Book</span></a>
+    <a href="tel:+19082591151" class="mcta" aria-label="Call Roselle Park"><span>Call</span></a>
+    <a href="https://maps.google.com/?q=13+W+Westfield+Ave+Roselle+Park+NJ" target="_blank" rel="noopener" class="mcta" aria-label="Get directions"><span>Directions</span></a>
   </div>
-</section>
 
-<!-- ============== MARQUEE STRIP ============== -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Skin Fades</span><span>★</span><span>Beard Sculpts</span><span>★</span>
-    <span>Lineups</span><span>★</span><span>Designs</span><span>★</span>
-    <span>Kids Cuts</span><span>★</span><span>Hot Towel</span><span>★</span>
-    <span>Skin Fades</span><span>★</span><span>Beard Sculpts</span><span>★</span>
-    <span>Lineups</span><span>★</span><span>Designs</span><span>★</span>
-    <span>Kids Cuts</span><span>★</span><span>Hot Towel</span><span>★</span>
-  </div>
-</div>
-
-<!-- ============== BARBERS ============== -->
-<section class="barbers" id="barbers">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Meet The Team</p>
-      <h2>The barbers behind the chair.</h2>
-      <p>Pick your barber. Each one has their own style, schedule, and following — and they're all booking online now.</p>
-    </div>
-    <div class="barbers-grid" id="barbersGrid">
-      <!-- Populated by js -->
-    </div>
-  </div>
-</section>
-
-<!-- ============== SERVICES ============== -->
-<section class="services" id="services">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Pricing</p>
-      <h2>Services & rates.</h2>
-      <p>Each barber sets their own rates. Below are the typical ranges across the team.</p>
-    </div>
-    <div class="services-grid" id="servicesGrid">
-      <!-- Populated by js -->
-    </div>
-  </div>
-</section>
-
-<!-- ============== GALLERY ============== -->
-<section class="gallery" id="gallery">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">The Work</p>
-      <h2>Cuts that speak for themselves.</h2>
-      <p>Featured work from our barbers' Instagram. Follow along — <a href="https://www.instagram.com/crystalzusa/" target="_blank" rel="noopener" style="color:var(--gold);">@crystalzusa</a></p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/gallery/01-joel-inspo.jpeg" alt="Joel — featured work"></div>
-      <div class="gallery-item"><img src="images/gallery/05-beard-work.jpeg" alt="Beard sculpt"></div>
-      <div class="gallery-item"><img src="images/gallery/06-skin-fade.jpeg" alt="Skin fade"></div>
-      <div class="gallery-item"><img src="images/gallery/02-fade-detail.jpeg" alt="Fade detail"></div>
-      <div class="gallery-item"><img src="images/gallery/07-classic-cut.jpeg" alt="Classic cut"></div>
-      <div class="gallery-item"><img src="images/gallery/08-final-look.jpeg" alt="Final look"></div>
-      <div class="gallery-item"><img src="images/gallery/04-barber-action.jpeg" alt="Barber at work"></div>
-    </div>
-    <div class="gallery-cta">
-      <a href="https://www.instagram.com/joelthebarberjs/" class="btn btn-outline" target="_blank" rel="noopener">Follow @joelthebarberjs · 12K</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============== LOCATIONS ============== -->
-<section class="locations" id="locations">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Find Us</p>
-      <h2>Two NJ locations.</h2>
-      <p>Walk-ins welcome where space allows. Booking online is faster.</p>
-    </div>
-    <div class="locations-grid">
-      <article class="location-card reveal">
-        <div class="location-eyebrow">Flagship</div>
-        <h3 class="location-name">Roselle Park</h3>
-        <div class="location-details">
-          📍 <a href="https://maps.google.com/?q=13+W+Westfield+Ave+Roselle+Park+NJ+07204" target="_blank" rel="noopener">13 W Westfield Ave, Roselle Park, NJ 07204</a><br>
-          📞 <a href="tel:+19082591151">(908) 259-1151</a>
-        </div>
-        <dl class="location-hours">
-          <div style="display:flex;justify-content:space-between;"><dt>Mon–Fri</dt><dd>10am – 8pm</dd></div>
-          <div style="display:flex;justify-content:space-between;"><dt>Saturday</dt><dd>9am – 7pm</dd></div>
-          <div style="display:flex;justify-content:space-between;"><dt>Sunday</dt><dd>Closed</dd></div>
-        </dl>
-        <div class="location-actions">
-          <a href="#" class="btn book-trigger" data-location="roselle-park">Book Here</a>
-          <a href="https://maps.google.com/?q=13+W+Westfield+Ave+Roselle+Park+NJ" class="btn btn-outline" target="_blank" rel="noopener">Directions</a>
-        </div>
-      </article>
-      <article class="location-card reveal">
-        <div class="location-eyebrow">Second Location</div>
-        <h3 class="location-name">Elizabeth</h3>
-        <div class="location-details">
-          📍 <a href="https://maps.google.com/?q=910+Elizabeth+Ave+Elizabeth+NJ+07201" target="_blank" rel="noopener">910 Elizabeth Ave, Elizabeth, NJ 07201</a><br>
-          📞 <a href="tel:+19083516040">(908) 351-6040</a>
-        </div>
-        <dl class="location-hours">
-          <div style="display:flex;justify-content:space-between;"><dt>Mon–Sat</dt><dd>10am – 8pm</dd></div>
-          <div style="display:flex;justify-content:space-between;"><dt>Sunday</dt><dd>10am – 4pm</dd></div>
-        </dl>
-        <div class="location-actions">
-          <a href="#" class="btn book-trigger" data-location="elizabeth">Book Here</a>
-          <a href="https://maps.google.com/?q=910+Elizabeth+Ave+Elizabeth+NJ" class="btn btn-outline" target="_blank" rel="noopener">Directions</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============== REVIEWS ============== -->
-<section class="reviews">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Customer Reviews</p>
-      <h2>4.9 ★ on Booksy. 269+ five-star reviews.</h2>
-    </div>
-    <div class="reviews-grid">
-      <article class="review-card reveal">
-        <div class="review-stars">★ ★ ★ ★ ★</div>
-        <p class="review-quote">"Joel is very precise especially with fades. The whole shop has that family vibe — kids welcome, regulars treated right."</p>
-        <p class="review-author">— Booksy Customer</p>
-      </article>
-      <article class="review-card reveal">
-        <div class="review-stars">★ ★ ★ ★ ★</div>
-        <p class="review-quote">"You feel like a regular even on your first visit. They handle classic and stylish — kids' cuts, fades, designs, beard work."</p>
-        <p class="review-author">— Yelp Customer</p>
-      </article>
-      <article class="review-card reveal">
-        <div class="review-stars">★ ★ ★ ★ ★</div>
-        <p class="review-quote">"Been coming for four years. Ask for Miguel Po — solid barber, polite, great service every single time."</p>
-        <p class="review-author">— Foursquare Tip</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============== FOOTER ============== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <div class="footer-logo"><img src="assets/logo.svg" alt="Crystalz"></div>
-        <p class="footer-tagline">Family-owned NJ barbershop. Two locations. Real cuts, no shortcuts.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/crystalzusa/" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
-          <a href="https://www.facebook.com/p/Crystalz-Barbershop-100057115974297/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-          <a href="https://booksy.com/en-us/1097676_crystalz-barbershop_barber-shop_28871_roselle-park" target="_blank" rel="noopener" aria-label="Booksy">B</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Locations</h5>
-        <ul>
-          <li>Roselle Park</li>
-          <li>13 W Westfield Ave</li>
-          <li><a href="tel:+19082591151">(908) 259-1151</a></li>
-          <li style="margin-top:12px;">Elizabeth</li>
-          <li>910 Elizabeth Ave</li>
-          <li><a href="tel:+19083516040">(908) 351-6040</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Site</h5>
-        <ul>
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#barbers">Barbers</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#locations">Find Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Book Now</h5>
-        <ul>
-          <li><a href="#" class="book-trigger">Online Booking</a></li>
-          <li><a href="https://booksy.com/en-us/1097676_crystalz-barbershop_barber-shop_28871_roselle-park" target="_blank" rel="noopener">Booksy</a></li>
-          <li><a href="https://www.instagram.com/crystalzusa/" target="_blank" rel="noopener">Instagram DM</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © 2026 Crystalz Barbershop · Roselle Park & Elizabeth, NJ · All rights reserved
-    </div>
-  </div>
-</footer>
-
-<!-- ============== BOOKING MODAL ============== -->
-<div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true">
-  <div class="modal">
-    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-    <p class="eyebrow" style="padding-left:0;">Book An Appointment</p>
-    <h3>Sharp cut. Real time.</h3>
-    <p class="modal-sub">Pick your barber, your service, and a time. We'll send a confirmation by SMS and your calendar invite by email.</p>
-
-    <form id="bookingForm">
-      <div class="form-error" id="formError"></div>
-
-      <div class="form-group">
-        <label for="b-location">Location</label>
-        <select id="b-location" name="location" required>
-          <option value="">— Select a location —</option>
-          <option value="roselle-park">Roselle Park · 13 W Westfield Ave</option>
-          <option value="elizabeth">Elizabeth · 910 Elizabeth Ave</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="b-barber">Barber</label>
-        <select id="b-barber" name="barber" required>
-          <option value="">— Choose your barber —</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="b-service">Service</label>
-        <select id="b-service" name="service" required>
-          <option value="">— Choose a service —</option>
-        </select>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="b-date">Date</label>
-          <input type="date" id="b-date" name="date" required>
-        </div>
-        <div class="form-group">
-          <label for="b-time">Time</label>
-          <select id="b-time" name="time" required>
-            <option value="">— Time —</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="b-name">Your Name</label>
-          <input type="text" id="b-name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="b-phone">Phone</label>
-          <input type="tel" id="b-phone" name="phone" placeholder="(908) 555-1234" required>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="b-email">Email</label>
-        <input type="email" id="b-email" name="email" required>
-      </div>
-
-      <div class="form-group">
-        <label for="b-notes">Notes (optional)</label>
-        <textarea id="b-notes" name="notes" rows="2" placeholder="Any details we should know?"></textarea>
-      </div>
-
-      <button type="submit" class="btn" id="submitBtn">Confirm Appointment</button>
-    </form>
-
-    <div class="form-success" id="formSuccess">
-      <div class="form-success-icon">✓</div>
-      <h3>Appointment Confirmed</h3>
-      <p style="color:var(--cream-dim); margin-top:12px;">We've sent a confirmation by SMS, and your calendar invite is in your email. See you soon.</p>
-      <button class="btn btn-outline" id="successClose" style="margin-top:24px;">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- ============== MOBILE STICKY CTA BAR ============== -->
-<div class="mobile-cta-bar" role="navigation" aria-label="Quick actions">
-  <a href="#" class="mcta mcta-primary book-trigger" aria-label="Book an appointment">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-    <span>Book Now</span>
-  </a>
-  <a href="tel:+19082591151" class="mcta" aria-label="Call Roselle Park">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    <span>Call</span>
-  </a>
-  <a href="https://maps.google.com/?q=13+W+Westfield+Ave+Roselle+Park+NJ" target="_blank" rel="noopener" class="mcta" aria-label="Get directions">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-    <span>Directions</span>
-  </a>
-</div>
-
-<script src="js/data.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
