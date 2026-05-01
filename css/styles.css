@@ -256,6 +256,22 @@ section { padding: 100px 0; position: relative; }
 .family-card h4 { color: var(--gold); margin-bottom: 8px; font-family: 'Inter'; font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
 .family-card .family-list { color: var(--cream); font-size: 1.1rem; line-height: 1.9; }
 .family-card .family-list span { color: var(--gold); }
+.family-card .family-list a {
+  color: var(--cream); text-decoration: none;
+  display: inline-block; padding: 2px 6px; margin: -2px -6px;
+  border-radius: 2px; transition: background var(--transition), color var(--transition);
+  position: relative;
+}
+.family-card .family-list a:hover {
+  background: rgba(201, 169, 97, 0.08); color: var(--gold-bright);
+}
+.family-card .family-list a:hover span { color: var(--gold-bright); }
+.family-card .family-list a::after {
+  content: "→"; opacity: 0; margin-left: 8px;
+  transition: opacity var(--transition), margin-left var(--transition);
+  color: var(--gold);
+}
+.family-card .family-list a:hover::after { opacity: 1; margin-left: 12px; }
 
 .about-visual {
   position: relative; aspect-ratio: 4/5;
@@ -583,6 +599,109 @@ section { padding: 100px 0; position: relative; }
 @media (max-width: 540px) {
   .footer-grid { grid-template-columns: 1fr; }
   .modal { padding: 32px 24px; }
+}
+
+/* ===============================
+   Barber bio pages (/barbers/*.html)
+   =============================== */
+.barber-page-hero {
+  position: relative; min-height: 70vh;
+  display: grid; grid-template-columns: 1fr 1.2fr; align-items: center;
+  padding: 140px 60px 80px; gap: 64px;
+  overflow: hidden;
+}
+.barber-page-hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 30% 50%, rgba(201, 169, 97, 0.12) 0%, transparent 70%),
+    linear-gradient(135deg, #0F0E0C 0%, #0A0A0A 50%, #14110C 100%);
+}
+.barber-page-portrait {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 460px; aspect-ratio: 1/1; object-fit: cover;
+  border: 1px solid var(--border-gold); border-radius: var(--radius);
+  filter: grayscale(15%) contrast(1.05);
+  box-shadow: var(--shadow-card);
+  justify-self: end;
+}
+.barber-page-hero-content { position: relative; z-index: 1; }
+.barber-page-back {
+  display: inline-block; color: var(--gold); font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 3px; text-transform: uppercase; margin-bottom: 24px;
+  transition: color var(--transition);
+}
+.barber-page-back:hover { color: var(--gold-bright); }
+.barber-page-badge {
+  display: inline-block; color: var(--gold); padding: 6px 14px;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+  border: 1px solid var(--gold); border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+.barber-page-name {
+  font-family: 'Cinzel', serif; font-weight: 900; font-size: clamp(2.4rem, 5vw, 4rem);
+  color: var(--cream); line-height: 1.05; margin-bottom: 4px; letter-spacing: 0.02em;
+}
+.barber-page-fullname {
+  color: var(--cream-dim); font-style: italic; font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; margin-bottom: 16px;
+}
+.barber-page-handle {
+  display: inline-block; color: var(--gold); font-size: 0.95rem; font-weight: 500;
+  letter-spacing: 1px; margin-bottom: 24px;
+  transition: color var(--transition);
+}
+.barber-page-handle:hover { color: var(--gold-bright); }
+.barber-page-bio {
+  color: var(--cream-dim); font-size: 1.1rem; line-height: 1.7; margin-bottom: 28px;
+  max-width: 540px;
+}
+.barber-page-meta {
+  display: grid; grid-template-columns: 1fr; gap: 8px; max-width: 540px;
+  padding: 20px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 28px;
+}
+.barber-page-meta div { color: var(--cream); font-size: 0.92rem; }
+.barber-page-meta span {
+  display: inline-block; min-width: 80px;
+  color: var(--gold); font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; margin-right: 12px;
+}
+.barber-page-meta a { color: var(--gold); }
+.barber-page-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.barber-page-pricing { background: var(--bg-card); padding: 80px 0; }
+.barber-page-pricing .eyebrow { display: block; text-align: center; padding-left: 0; }
+.barber-page-pricing .eyebrow::before { display: none; }
+.barber-page-pricing h2 { text-align: center; margin-bottom: 48px; color: var(--cream); }
+.barber-page-pricing .services-grid { max-width: 980px; margin: 0 auto; }
+.barber-page-gallery-section { background: var(--bg-primary); padding: 80px 0; }
+.barber-page-gallery-section .eyebrow { display: block; text-align: center; padding-left: 0; }
+.barber-page-gallery-section .eyebrow::before { display: none; }
+.barber-page-gallery-section h2 { text-align: center; margin-bottom: 48px; color: var(--cream); }
+.barber-page-gallery {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px; max-width: 1100px; margin: 0 auto;
+}
+.barber-page-gallery .gallery-item {
+  aspect-ratio: 1/1; border-radius: var(--radius); overflow: hidden;
+  background: var(--bg-card);
+}
+.barber-page-cta {
+  background: var(--bg-card); padding: 80px 0;
+  text-align: center; border-top: 1px solid var(--border-gold);
+}
+.barber-page-cta .eyebrow { padding-left: 0; }
+.barber-page-cta .eyebrow::before { display: none; }
+
+@media (max-width: 900px) {
+  .barber-page-hero {
+    grid-template-columns: 1fr; padding: 100px 24px 40px; gap: 32px;
+    text-align: center; min-height: auto;
+  }
+  .barber-page-portrait { max-width: 280px; justify-self: center; }
+  .barber-page-bio { max-width: none; margin-left: auto; margin-right: auto; }
+  .barber-page-meta { max-width: none; }
+  .barber-page-meta span { min-width: 70px; }
+  .barber-page-actions { justify-content: center; }
 }
 
 /* ===============================
