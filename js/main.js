@@ -226,9 +226,10 @@
         const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
         const dx = e.clientX - cx, dy = e.clientY - cy;
         const dist = Math.hypot(dx, dy);
-        const radius = Math.max(r.width, r.height) * 1.5;
+        const radius = Math.max(r.width, r.height) * 1.2;
         if (dist < radius) {
-          btn.style.transform = `translate(${dx * 0.2}px, ${dy * 0.3}px)`;
+          // Subtler magnetic pull — was 0.2/0.3, now 0.08/0.08
+          btn.style.transform = `translate(${dx * 0.08}px, ${dy * 0.08}px)`;
         } else if (btn.style.transform) {
           btn.style.transform = '';
         }
