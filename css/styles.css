@@ -143,6 +143,29 @@ img { max-width: 100%; height: auto; display: block; }
   from { transform: scale(1.0); }
   to   { transform: scale(1.08); }
 }
+.hero-pattern {
+  position: absolute;
+  inset: -10% 0;
+  width: 100%; height: 120%;
+  z-index: 0;
+  background-image: url("../images/hero-pattern.webp");
+  background-size: 900px auto;
+  background-position: center;
+  background-repeat: repeat;
+  filter: invert(1) brightness(0.95) contrast(1.1);
+  opacity: 0.55;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+@media (max-width: 768px) {
+  .hero-pattern {
+    background-image: url("../images/hero-pattern-mobile.webp");
+    background-size: 600px auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-pattern { transform: none !important; opacity: 0.45 !important; }
+}
 .hero-bg {
   position: absolute; inset: 0; z-index: 1;
   background:

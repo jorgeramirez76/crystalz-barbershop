@@ -271,4 +271,26 @@
       }
     }, { passive: true });
   }
+
+  // ────────────── HERO PATTERN PARALLAX (scroll-driven) ──────────────
+  const heroPattern = document.querySelector('.hero-pattern');
+  const heroEl = document.querySelector('.hero');
+  if (heroPattern && heroEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let ticking = false;
+    const updatePattern = () => {
+      const heroHeight = heroEl.offsetHeight || window.innerHeight;
+      const scrolled = window.scrollY;
+      const progress = Math.min(scrolled / heroHeight, 1);
+      const translateY = scrolled * 0.4;          // background lags behind content
+      const scale = 1 + progress * 0.08;          // subtle zoom-in
+      const opacity = 0.55 - progress * 0.40;     // fade as user scrolls past (0.55 → 0.15)
+      heroPattern.style.transform = `translate3d(0, ${translateY}px, 0) scale(${scale})`;
+      heroPattern.style.opacity = opacity.toFixed(3);
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { requestAnimationFrame(updatePattern); ticking = true; }
+    }, { passive: true });
+    updatePattern();
+  }
 })();
