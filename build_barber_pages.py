@@ -270,7 +270,7 @@ def render_barber_page(b: dict, services: list) -> str:
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 Crystalz Barbershop · Roselle Park & Elizabeth, NJ
+      © 2026 Crystalz Barbershop · Roselle Park & Elizabeth, NJ · Website by <a href="https://clickmingo.com" target="_blank" rel="noopener">ClickMingo</a>
     </div>
   </div>
 </footer>
